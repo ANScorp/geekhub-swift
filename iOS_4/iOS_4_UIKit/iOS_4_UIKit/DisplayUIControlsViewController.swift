@@ -60,6 +60,7 @@ class DisplayUIControlsViewController: UIViewController {
     
     @objc func changeViewAlphaOnSliderValueChanged(_ sender: UISlider) {
         nestedView?.alpha = 1 - CGFloat(sender.value)
+        nestedView?.layer.cornerRadius = CGFloat(sender.value * 20)
     }
     
     @IBAction func colorBtnTouchDragUpOutside(_ sender: UIButton) {
@@ -75,7 +76,7 @@ class DisplayUIControlsViewController: UIViewController {
         let sliderRect = changeViewAlphaSlider.frame
         let nestedViewRect = CGRect(x: sliderRect.origin.x, y: sliderRect.origin.y + 50, width: view.frame.size.width - 70, height: 130)
         nestedView = UIView(frame: nestedViewRect)
-        nestedView?.layer.cornerRadius = 9
+        nestedView?.layer.cornerRadius = 0
         nestedView?.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         changeViewAlphaSlider.addTarget(self, action: #selector(changeViewAlphaOnSliderValueChanged(_:)), for: .valueChanged)
         view.addSubview(nestedView!)
