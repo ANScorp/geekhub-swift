@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QtX-gv-uuE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Students View Controller-->
+        <scene sceneID="MtR-Q4-4uW">
+            <objects>
+                <viewController id="QtX-gv-uuE" customClass="StudentsViewController" customModule="iOS_6_Custom_Views" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJC-mF-ZQf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5yg-Gw-zoW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentCell" textLabel="T8t-KB-i4b" imageView="U2U-jZ-ZIM" style="IBUITableViewCellStyleDefault" id="0ZM-uJ-bjp">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0ZM-uJ-bjp" id="vOM-ek-unl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T8t-KB-i4b">
+                                                    <rect key="frame" x="79" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Students" id="U2U-jZ-ZIM">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentFreeCell" id="mcj-6F-bsg" customClass="StudentFreeCell" customModule="iOS_6_Custom_Views" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mcj-6F-bsg" id="KV4-C5-jsn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.up.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="J1V-2d-Ddr">
+                                                    <rect key="frame" x="20" y="13" width="20" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="J1V-2d-Ddr" secondAttribute="height" multiplier="1:1" id="Zoz-Dl-fIu"/>
+                                                        <constraint firstAttribute="width" constant="20" id="bLf-TK-VOs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StudentsFree" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-mm-c8Q">
+                                                    <rect key="frame" x="44" y="0.0" width="44" height="44.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="R8a-mm-c8Q" secondAttribute="height" multiplier="1:1" id="Qxt-Uw-e3l"/>
+                                                        <constraint firstAttribute="width" constant="44" id="WbF-un-xBt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBY-A9-TWc">
+                                                    <rect key="frame" x="98" y="12" width="296" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-jS-eWi">
+                                                    <rect key="frame" x="20" y="13" width="20" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="lcs-jS-eWi" secondAttribute="height" multiplier="1:1" id="6Lq-zJ-dwf"/>
+                                                        <constraint firstAttribute="width" constant="20" id="lWf-J4-1k8"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="chevron.up.circle" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="addToStudentsBtn:" destination="mcj-6F-bsg" eventType="touchUpInside" id="pAq-nV-0U3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="J1V-2d-Ddr" firstAttribute="centerY" secondItem="KV4-C5-jsn" secondAttribute="centerY" id="MDT-cx-gFA"/>
+                                                <constraint firstItem="R8a-mm-c8Q" firstAttribute="leading" secondItem="J1V-2d-Ddr" secondAttribute="trailing" constant="4" id="NbJ-GH-aax"/>
+                                                <constraint firstAttribute="trailing" secondItem="vBY-A9-TWc" secondAttribute="trailing" constant="20" id="PfD-7I-eFr"/>
+                                                <constraint firstItem="J1V-2d-Ddr" firstAttribute="leading" secondItem="KV4-C5-jsn" secondAttribute="leading" constant="20" id="Qyq-pe-d2r"/>
+                                                <constraint firstItem="R8a-mm-c8Q" firstAttribute="top" secondItem="KV4-C5-jsn" secondAttribute="top" id="TbX-lc-htH"/>
+                                                <constraint firstItem="vBY-A9-TWc" firstAttribute="centerY" secondItem="KV4-C5-jsn" secondAttribute="centerY" id="o2N-cn-7Vh"/>
+                                                <constraint firstItem="vBY-A9-TWc" firstAttribute="leading" secondItem="R8a-mm-c8Q" secondAttribute="trailing" constant="10" id="u4A-sT-EdF"/>
+                                                <constraint firstItem="lcs-jS-eWi" firstAttribute="leading" secondItem="KV4-C5-jsn" secondAttribute="leading" constant="20" id="uEn-Rw-Iep"/>
+                                                <constraint firstItem="R8a-mm-c8Q" firstAttribute="centerY" secondItem="KV4-C5-jsn" secondAttribute="centerY" id="ynL-Ml-k0U"/>
+                                                <constraint firstItem="lcs-jS-eWi" firstAttribute="centerY" secondItem="KV4-C5-jsn" secondAttribute="centerY" id="zLN-q0-TDF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="vBY-A9-TWc" id="pKF-io-Uhy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentRetiredCell" textLabel="CeB-Fo-R1E" imageView="0ES-uV-xBn" style="IBUITableViewCellStyleDefault" id="sVx-xP-xcK">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sVx-xP-xcK" id="Dp0-rQ-sHk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CeB-Fo-R1E">
+                                                    <rect key="frame" x="79" y="0.0" width="315" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="StudentsRetired" id="0ES-uV-xBn">
+                                                    <rect key="frame" x="20" y="0.0" width="44" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QtX-gv-uuE" id="xSr-1L-CcR"/>
+                                    <outlet property="delegate" destination="QtX-gv-uuE" id="5vQ-8X-mwe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UA0-7g-bV3" firstAttribute="trailing" secondItem="5yg-Gw-zoW" secondAttribute="trailing" id="7Ut-sg-gEK"/>
+                            <constraint firstItem="5yg-Gw-zoW" firstAttribute="top" secondItem="UA0-7g-bV3" secondAttribute="top" id="Oez-Lg-YZf"/>
+                            <constraint firstItem="5yg-Gw-zoW" firstAttribute="leading" secondItem="UA0-7g-bV3" secondAttribute="leading" id="lYl-by-xWJ"/>
+                            <constraint firstItem="UA0-7g-bV3" firstAttribute="bottom" secondItem="5yg-Gw-zoW" secondAttribute="bottom" id="tWM-ON-tHA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UA0-7g-bV3"/>
+                    </view>
+                    <connections>
+                        <outlet property="studentsTableView" destination="5yg-Gw-zoW" id="ybj-aa-YYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UO8-1e-PrM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="98.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Students" width="48" height="48"/>
+        <image name="StudentsFree" width="48" height="48"/>
+        <image name="StudentsRetired" width="48" height="48"/>
+        <image name="chevron.up.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
