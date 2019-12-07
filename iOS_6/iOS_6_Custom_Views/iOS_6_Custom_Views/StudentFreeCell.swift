@@ -12,9 +12,17 @@ class StudentFreeCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    var tapCallback: (() -> Void)?
+    
     @IBAction func addToStudentsBtn(_ sender: UIButton) {
         print("Button touched")
-        
+        tapCallback?()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        tapCallback = nil
+        print("StudentFreeCell \(#function)")
     }
 
 }
