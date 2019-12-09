@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "60A13B56-C2B0-49ED-B345-BA2BF603E662"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C4D0FFE-3C3B-4D22-AB11-574000621818"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS_7_Custom_Views/StudentsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38478B0A-37D8-4DC2-8C5C-73121D738240"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS_7_Custom_Views/StudentsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "addStudent(to:as:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "38478B0A-37D8-4DC2-8C5C-73121D738240 - eb82ac40ca060b65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_7_Custom_Views.StudentsViewController.addStudent(to: Swift.String, as: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "iOS_7_Custom_Views"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Developer/GeekHub/geekhub-swift/iOS_7/iOS_7_Custom_Views/iOS_7_Custom_Views/StudentsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "189">
+               </Location>
+               <Location
+                  uuid = "38478B0A-37D8-4DC2-8C5C-73121D738240 - eb82ac40ca060b65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_7_Custom_Views.StudentsViewController.addStudent(to: Swift.String, as: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "iOS_7_Custom_Views"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Developer/GeekHub/geekhub-swift/iOS_7/iOS_7_Custom_Views/iOS_7_Custom_Views/StudentsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "545">
+               </Location>
+               <Location
+                  uuid = "38478B0A-37D8-4DC2-8C5C-73121D738240 - eb82ac40ca060b65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_7_Custom_Views.StudentsViewController.addStudent(to: Swift.String, as: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "iOS_7_Custom_Views"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alex/Developer/GeekHub/geekhub-swift/iOS_7/iOS_7_Custom_Views/iOS_7_Custom_Views/StudentsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "895">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
